@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* calc body */
+
+.calc {
+  flex: 1 0 auto;
+  width: 370px;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 0.5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* screen */
+
+.screen {
+  padding: 1rem;
+  border: 2px solid black;
+  text-align: right;
+  min-height: 109px;
+}
+
+.screen p {
+  margin: 0;
+}
+
+.up {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  min-height: 35px;
+}
+
+.down {
+  min-height: 38px;
+  font-size: 2rem;
+}
+
+/* button */
+
+.biggerBtn {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+#clear {
+  flex: 1 1 0;
+}
+
+#delete {
+  flex: 1 1 0;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+button {
+  flex: 1 1 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  justify-content: space-evenly;
+}
+
+
+/* footer */
+
+footer {
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer a {
+  align-self: center;
+}
+
+footer img {
+  width: 1rem;
+}
